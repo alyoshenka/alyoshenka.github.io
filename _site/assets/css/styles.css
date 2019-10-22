@@ -1,9 +1,13 @@
 .current { color: green; }
 
-body, html, .body { background-color: #000000; background: url(hexy.png); # background-repeat: no-repeat; # background-position: center; # background-attachment: fixed; }
+body, html, .body { background-color: #000000; background: url(starrySky.jpg); background-size: cover; }
 
 title { background: #ffffff; }
 
-h1 { color: #ffffff; }
+h1 { color: white; }
 
 h2 { color: #b5deff; }
+
+header { color: white; text-align: center; border: 3px solid gray; }
+
+about_body { display: block; height: 2%; color: lightblue; border: 2px dotted purple; }
