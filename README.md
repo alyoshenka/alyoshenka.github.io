@@ -1,3 +1,3 @@
 my first website build
 
-[site](https://github.com/alyoshenka)
+[site](https://alyoshenka.github.io/)
