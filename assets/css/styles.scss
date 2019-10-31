@@ -1,3 +1,4 @@
 ---
+// empty front matter tells jekyll to process file
 ---
-@import "main";
+@import "main"; // look for main.scss in _sass/

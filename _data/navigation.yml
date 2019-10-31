@@ -1,3 +1,6 @@
+# site navigation data
+# accessible from site.data.navigation
+
 - name: Home
   link: /
 - name: About

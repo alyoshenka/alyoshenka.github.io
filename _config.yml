@@ -17,7 +17,7 @@ collections:
         authors:
                 output: true
 
-defaults:
+defaults: # site-wide defaults
         - scope:
                 path: ""
                 type: "authors"
