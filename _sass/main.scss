@@ -5,15 +5,17 @@
 
 body, html, .body
 {
-	background-color: #000000;
-	background: url(gray.png);
-	background-size: cover;
+	background-color: gray;
+	// background: url(../images/vec3.jpg); // how do i make this better?
+	// background-size: cover;
 
 }
 
 title
 {
 	background: #ffffff;
+	size: 30px;
+	text-align: left;
 }
 
 h1{ color: white; }
@@ -24,7 +26,7 @@ header
 { 
 	color: white;
 	text-align: center; 
-	border: 3px solid gray;
+	border: 3px solid blue;
 }
 
 footer
@@ -45,9 +47,18 @@ about_body
 post_body
 {
 	color: rgb(60, 0, 0);
+	background-color: lightblue;
 }
 
 post_excerpt
 {
 	color: darkblue;
+}
+
+.fill_img
+{
+	display: block;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
 }

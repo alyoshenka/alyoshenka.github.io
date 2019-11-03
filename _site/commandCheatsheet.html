@@ -1,0 +1,128 @@
+<!docotype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="/assets/css/styles.css"> <!-- link stylesheet -->
+	</head>
+	<body>
+		<header>
+    <p>This is a header</p>
+</header>
+		<nav>
+	
+	<a href="/" >
+		Home
+	</a>
+	
+	<a href="/about.html" >
+		About
+	</a>
+	
+	<a href="/blog.html" >
+		Blog
+	</a>
+	
+	<a href="/links.html" >
+		Links
+	</a>
+	
+</nav>
+
+		<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll build // builds site, outputs to static directory _site
+jekyll serve // same + rebuilds with every change + runs <span class="nb">local </span>web server
+</code></pre></div></div>
+
+<p>Liquid: templating language</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Objects: where to outpus content
+
+    
+
+Tags: logic and control flow
+
+    
+
+    include: include from file in _includes/
+
+Filters: change output of object
+
+    Hi
+
+    ex. markdownify
+
+
+content (variable): value of rendered content on page 
+
+page.url: current url
+</code></pre></div></div>
+
+<p>Front Matter: YAML to set variables</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tells Jekyll to process Liquid
+
+---
+
+my_number: 5
+
+---
+</code></pre></div></div>
+
+<p>Layoout: template that wraps around content (if you add layout, content is auto populated)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>in _layouts/layoutName.html
+</code></pre></div></div>
+
+<p>posts: site.posts</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>post.url: output path of post
+
+post.title: pulled from filename, overridden by setting {title} in front matter
+
+post.excerpt: first paragraph of content
+</code></pre></div></div>
+
+<p>Collection: similar to post, but content not grouped by data</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>default = do not output a document page
+
+
+    _config.yml
+
+        output: true // override this ^
+</code></pre></div></div>
+
+<p>Document: item in a collection</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>folder in /_{collection_name}
+</code></pre></div></div>
+
+<p>site.{collection_name} gets collection</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// give them an author page
+
+
+
+// give them an author page
+</code></pre></div></div>
+
+<p>Gemfile: ensures version of Jekyll + other gems stays consistent</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install: creates Gemfile.lock
+</code></pre></div></div>
+
+<p>Gemfile.lock: locks current gem versions, bundle update to update</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restricts Ruby environment to only use Gems in Gemfile
+
+// https://jekyllrb.com/docs/step-by-step/10-deployment/
+
+// when I'm ready for more advannced stuff ^
+</code></pre></div></div>
+
+
+		<footer>
+    <p>This is a footer</p>
+</footer>
+	</body>
+</html>

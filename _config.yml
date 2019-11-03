@@ -32,4 +32,8 @@ defaults: # site-wide defaults
                 path: ""
           values:
                 layout: "default"
+        - scope:
+                path: "assets/iamges"
+          values:
+                image: true
 
