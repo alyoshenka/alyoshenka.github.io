@@ -62,8 +62,9 @@ Here is an image
     }
 ```
 
-This text should have a footnote[^1]
-[^1]: Here is the footnote
+This text should have a footnote[^boop]
+# this line needs to be here
+[^boop]: Here is the footnote
 
 - [ ] unchecked
 - [x] checked

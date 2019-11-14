@@ -110,8 +110,8 @@ This should show up in excerpt.</p>
     <span class="p">}</span>
 </code></pre></div></div>
 
-<p>This text should have a footnote[^1]
-[^1]: Here is the footnote</p>
+<p>This text should have a footnote<sup id="fnref:boop"><a href="#fn:boop" class="footnote">1</a></sup></p>
+<h1 id="this-line-needs-to-be-here">this line needs to be here</h1>
 
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />unchecked</li>
@@ -171,6 +171,13 @@ raw Markdown line up prettily. You can also use inline Markdown.</p>
   </tbody>
 </table>
 
+<div class="footnotes">
+  <ol>
+    <li id="fn:boop">
+      <p>Here is the footnote <a href="#fnref:boop" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 </post_body>
 
