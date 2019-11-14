@@ -22,7 +22,7 @@ defaults: # site-wide defaults
                 path: ""
                 type: "authors"
           values:
-                  layout: "author"
+                layout: "author"
         - scope:
                 path: ""
                 type: "posts"
@@ -36,4 +36,5 @@ defaults: # site-wide defaults
                 path: "assets/images"
           values:
                 image: true
+
 
