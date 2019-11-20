@@ -5,7 +5,7 @@ jekyll serve // same + rebuilds with every change + runs local web server
 
 Liquid: templating language
 
-    Objects: where to outpus content
+    Objects: where to output content
 
         {{ page.title }}
 
