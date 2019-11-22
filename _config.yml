@@ -16,6 +16,8 @@ sass:
 collections:
         authors:
                 output: true
+        projects:
+                output: true
 
 # site-wide defaults
 defaults: 
@@ -25,14 +27,14 @@ defaults:
                 layout: "default"
 
         - scope:
-                path: "_posts"
+                path: "_projects"
           values: 
                 layout: "post"
 
         - scope:
-                path: "_projects"
-          values:
-                layout: "project"
+                path: "_posts"
+          values: 
+                layout: "post"
 
         - scope:
                 path: "assets/images"
