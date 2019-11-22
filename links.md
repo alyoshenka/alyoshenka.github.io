@@ -13,7 +13,7 @@ title: Contact
 ### Contact me on: 
 
 {% for item in site.data.contact %}
-* {{ item.platform }} @ {{ item.user }}
+* [{{ item.platform }}]({{ item.link }}) @ {{ item.user }}
 {% endfor %}
 
 

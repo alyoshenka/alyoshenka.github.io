@@ -17,25 +17,23 @@ collections:
         authors:
                 output: true
 
-defaults: # site-wide defaults
+# site-wide defaults
+defaults: 
         - scope:
-                path: "_pages/"
+                path: ""
           values:
                 layout: "default"
+
         - scope:
-                path: ""
-                type: "authors"
-          values:
-                layout: "author"
-        - scope:
-                path: ""
-                type: "posts"
+                path: "_posts"
           values: 
                 layout: "post"
+
         - scope:
-                path: ""
+                path: "_projects"
           values:
-                layout: "default"
+                layout: "project"
+
         - scope:
                 path: "assets/images"
           values:
