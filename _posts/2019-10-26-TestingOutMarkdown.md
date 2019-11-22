@@ -1,5 +1,4 @@
 ---
-author: Alexi
 title: Testing out Markdown
 peek: various md formatting
 ---

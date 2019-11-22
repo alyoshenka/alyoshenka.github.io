@@ -1,6 +1,0 @@
----
-author: Alyoshenka
----
-This is my second post.
-
-I am using it to test out multiple authors.

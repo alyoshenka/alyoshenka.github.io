@@ -4,7 +4,7 @@ html { background: url(../images/hexy.png); background-size: auto; margin: 2%; }
 
 title { color: #ffffff; size: 10px; text-align: left; }
 
-h1, h2, h3, h4, h5, ul, li, p, nav { font-family: 'Courier New', Courier, monospace; color: #70d4fc; }
+h1, h2, h3, h4, h5, ul, li, p, nav, tr, th, code { font-family: 'Courier New', Courier, monospace; color: #70d4fc; }
 
 header { color: white; text-align: center; border: 3px solid blue; }
 
