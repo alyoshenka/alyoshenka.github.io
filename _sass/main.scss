@@ -1,26 +1,28 @@
 .current 
 {
 	color: green; // current page
+	font-weight: bold;
 }
 
-body, html, .body
+html
 {
-	background-color: gray;
-	// background: url(../images/vec3.jpg); // how do i make this better?
-	// background-size: cover;
-
+	background: url(../images/hexy.png);
+	background-size: auto;
+	margin: 2%;
 }
 
 title
 {
-	background: #ffffff;
-	size: 30px;
+	color: #ffffff;
+	size: 10px;
 	text-align: left;
 }
 
-h1{ color: white; }
-
-h2{ color: #b5deff; }
+h1, h2, h3, h4, h5, ul, li, p, nav
+{ 
+	font-family: 'Courier New', Courier, monospace;
+	color: rgb(112, 212, 252);
+}
 
 header
 { 
@@ -32,27 +34,10 @@ header
 footer
 {
 	color: white;
-	text-align: right; 
-	border: 1px solid black;
-}
-
-about_body
-{
-	display: block; // new line
-	height: 2%;
-	color: lightblue;
-	border: 2px dotted purple;
-}
-
-post_body
-{
-	color: rgb(60, 0, 0);
-	background-color: lightblue;
-}
-
-post_excerpt
-{
-	color: darkblue;
+	text-align: center; 
+	border: 3px solid rgb(255, 255, 255);
+	bottom: 2%;
+	position: fixed;
 }
 
 .fill_img

@@ -19,6 +19,10 @@ collections:
 
 defaults: # site-wide defaults
         - scope:
+                path: "_pages/"
+          values:
+                layout: "default"
+        - scope:
                 path: ""
                 type: "authors"
           values:
