@@ -1,10 +1,13 @@
 ---
 author: Alexi
+title: Testing out Markdown
+peek: various md formatting
 ---
 This is my first post since reinvigorating my site.
 This should show up in excerpt.
 
 This should not show up in excerpt.
+
 
 ***
 
