@@ -36,13 +36,93 @@
 		<p>
     01 Sep 2019
 </p>
-    
-<post_body>
-    <p>hey look its an outline shader</p>
 
-<p>todo: add resource link and give credit</p>
+<p>I made an outline shader in Unity following a wonderful tuorial linked <a href="https://roystan.net/articles/outline-shader.html" title="Link to original outline shader tutorial">here</a>. This is an explanation of how it works.</p>
+<blockquote>
+  <p>Please note, this code is very heavily influenced by the linked tutorial, and I give full credit to the author.</p>
+</blockquote>
 
-</post_body>
+<p>// gif</p>
+
+<h3 id="setup">Setup</h3>
+<p>The finished shader is supplied to a material, which is then supplied to a script (FulscreenPostprocessing.cs in my case) that also takes in the main scene camera as a parameter. This script sets the cameras depth texture mode such that the camera will write both depth and normals into its buffer. Just before the image is rendered to the screen, this script takes the camera’s view, applies the given shader to it, and outputs it to the screen. The result is the normal camera view overlaid with outlines around objects.</p>
+
+<p>// gif?</p>
+
+<h4 id="shader-variables">Shader Variables</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>_MainTex</th>
+      <th>The main texture to work with, gets camera view rendered in on graphics blit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_Outline</td>
+      <td>outline color</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>_Scale</td>
+      <td><strong>add</strong></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>_DepthThreshold</td>
+      <td><strong>add</strong></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>_NormalThreshold</td>
+      <td><strong>add</strong></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>_DepthNormalThreshold</td>
+      <td><strong>add</strong></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>DepthNormalThresholdScale</td>
+      <td><strong>add</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="vertex-shader">Vertex Shader</h4>
+<p>Pretty standard vertex shader, the only additional things it does is calculate the view apace direction of the camera</p>
+
+<p>// img?</p>
+
+<h4 id="vertex---fragment-data">Vertex -&gt; Fragment data</h4>
+<p>Holds typical vertex and uv data, as well as a variable for the view space matrix of the camera</p>
+
+<p>// img?</p>
+
+<h3 id="fragment-shader">Fragment Shader</h3>
+<blockquote>
+  <p>How it all works</p>
+</blockquote>
+
+<p>Outlines are formed around the edges of an object. The question of how to make an outline shader then becomes ‘How can I detect the edges of an object?’ In this case, edge detection is done by checking the difference in depth (measured from the camera) between two points, and the difference between the directions these two faces are pointing.</p>
+
+<p>// more explanation</p>
+
+<h4 id="depth">Depth</h4>
+
+<p>Every frame, the main camera renders into a depth texture that can be accessed from inside the shader. To check the depth of the current point and compare it to those around it, we must first figure out what and where these “points around it” are going to be. In this case, I am picking four points diagonally from the starting point (in an x shape). Using these points, I can access the depth of each one by reading from the camera depth texture.</p>
+
+<p>// dpeth only image</p>
+
+
+
 
 
 
